@@ -5,148 +5,130 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#BDB9B9"
-    android:padding="16dp">
+    android:background="@color/white"
+    android:padding="16dp"
+    tools:context=".assignTasks">
 
-    <!-- Task Name -->
-
-    <!-- Task Description -->
-
-    <!-- Attach Documents Button -->
-
-    <!-- Due Date Field -->
-
-    <!-- Assign to Email Field -->
-
+    <!-- Task Name Field -->
     <EditText
         android:id="@+id/task_name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:autofillHints="Name of task"
-        android:background="@color/material_dynamic_neutral100"
-        android:backgroundTint="#082F54"
-        android:backgroundTintMode="screen"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#CCCCCC"
         android:hint="Name of Task"
         android:inputType="text"
         android:padding="12dp"
         android:textColor="#000000"
-        android:textColorHint="#272525"
+        android:textColorHint="#888888"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="HardcodedText" />
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- Task Description Field -->
     <EditText
         android:id="@+id/task_description"
         android:layout_width="0dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="48dp"
-        android:autofillHints="Description"
-        android:background="@color/material_dynamic_neutral100"
-        android:backgroundTintMode="screen"
+        android:layout_height="120dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#CCCCCC"
         android:gravity="top|start"
         android:hint="Task Description"
-        android:inputType="text|textMultiLine"
+        android:inputType="textMultiLine"
         android:padding="12dp"
         android:textColor="#000000"
-        android:textColorHint="#141313"
+        android:textColorHint="#888888"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/task_name"
-        tools:ignore="HardcodedText" />
+        app:layout_constraintTop_toBottomOf="@id/task_name" />
 
+    <!-- Attach Documents Button -->
     <Button
         android:id="@+id/attach_documents_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="76dp"
-        android:backgroundTint="#082F54"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#007BFF"
         android:text="Attach Documents"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/task_description"
-        tools:ignore="HardcodedText" />
+        app:layout_constraintTop_toBottomOf="@id/task_description" />
 
+    <!-- Due Date Field -->
     <EditText
         android:id="@+id/due_date_field"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:layout_marginEnd="8dp"
-        android:autofillHints="Enter date"
-        android:background="@color/material_dynamic_neutral100"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#CCCCCC"
         android:hint="Due Date"
-        android:inputType="text|date"
+        android:inputType="date"
         android:padding="12dp"
         android:textColor="#000000"
-        android:textColorHint="#201F1F"
+        android:textColorHint="#888888"
         app:layout_constraintEnd_toStartOf="@id/assign_email_field"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/attach_documents_button"
-        tools:ignore="HardcodedText" />
+        app:layout_constraintTop_toBottomOf="@id/attach_documents_button" />
 
-    <!-- Assign Button -->
+    <!-- Assign to Email Field -->
     <EditText
         android:id="@+id/assign_email_field"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:autofillHints="Enter email"
-        android:background="@color/material_dynamic_neutral100"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="#CCCCCC"
         android:hint="Assign Task to Email"
         android:inputType="textEmailAddress"
         android:padding="12dp"
         android:textColor="#000000"
-        android:textColorHint="#353434"
+        android:textColorHint="#888888"
+        app:layout_constraintBottom_toTopOf="@+id/task_log_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/due_date_field"
-        app:layout_constraintTop_toBottomOf="@id/attach_documents_button"
-        tools:ignore="HardcodedText" />
+        app:layout_constraintTop_toBottomOf="@id/attach_documents_button" />
 
-    <!-- Task Log Button -->
+    <!-- Assign Button -->
     <Button
         android:id="@+id/assign_button"
-        android:layout_width="152dp"
-        android:layout_height="47dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        android:backgroundTint="#082F54"
+        android:backgroundTint="#007BFF"
         android:text="Assign"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toStartOf="@id/task_log_button"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/due_date_field"
-        tools:ignore="HardcodedText" />
+        app:layout_constraintTop_toBottomOf="@id/due_date_field" />
 
+    <!-- Task Log Button -->
     <Button
         android:id="@+id/task_log_button"
-        android:layout_width="154dp"
-        android:layout_height="46dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
-        android:backgroundTint="#082F54"
+        android:backgroundTint="#007BFF"
         android:text="Task Log"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/assign_button"
-        app:layout_constraintTop_toBottomOf="@id/due_date_field"
-        tools:ignore="HardcodedText" />
+        app:layout_constraintTop_toBottomOf="@id/due_date_field" />
 
+    <!-- Completed Task Button -->
     <Button
         android:id="@+id/viewComp"
-        android:layout_width="152dp"
-        android:layout_height="47dp"
-        android:layout_marginTop="68dp"
-        android:layout_marginEnd="8dp"
-        android:backgroundTint="#082F54"
-        android:text="CompletedTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#007BFF"
+        android:text="Completed Tasks"
         android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toStartOf="@id/task_log_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/due_date_field"
-        tools:ignore="HardcodedText" />
+        app:layout_constraintTop_toBottomOf="@id/assign_button"
+        app:layout_constraintVertical_bias="0.066" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

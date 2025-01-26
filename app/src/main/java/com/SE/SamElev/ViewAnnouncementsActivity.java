@@ -15,19 +15,18 @@ import java.util.ArrayList;
 
 public class ViewAnnouncementsActivity extends AppCompatActivity {
 
-    private ListView announcementsListView;
     private FirebaseFirestore firestore;
     private ArrayAdapter<String> adapter;
     private ArrayList<String> announcementsList;
     private ArrayList<String> documentIds; // Store document IDs for deletion
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_announcements);
 
         firestore = FirebaseFirestore.getInstance();
-        announcementsListView = findViewById(R.id.announcementsListView);
+        ListView announcementsListView = findViewById(R.id.announcementsListView);
         announcementsList = new ArrayList<>();
         documentIds = new ArrayList<>();
 
@@ -86,8 +85,6 @@ public class ViewAnnouncementsActivity extends AppCompatActivity {
                     adapter.notifyDataSetChanged();
                     Toast.makeText(this, "Announcement deleted successfully", Toast.LENGTH_SHORT).show();
                 })
-                .addOnFailureListener(e -> {
-                    Toast.makeText(this, "Failed to delete announcement: " + e.getMessage(), Toast.LENGTH_SHORT).show();
-                });
+                .addOnFailureListener(e -> Toast.makeText(this, "Failed to delete announcement: " + e.getMessage(), Toast.LENGTH_SHORT).show());
     }
 }

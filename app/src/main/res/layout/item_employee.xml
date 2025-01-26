@@ -23,6 +23,7 @@
         android:id="@+id/btnPresent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#64DD17"
         android:text="Present"
         app:layout_constraintEnd_toStartOf="@+id/btnAbsent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -32,6 +33,7 @@
         android:id="@+id/btnAbsent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#D50000"
         android:text="Absent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
