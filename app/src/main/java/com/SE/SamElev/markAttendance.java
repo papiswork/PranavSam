@@ -1,3 +1,4 @@
+
 package com.SE.SamElev;
 
 import android.os.Bundle;
@@ -66,4 +67,3 @@ public class markAttendance extends AppCompatActivity {
     }
 
 }
-

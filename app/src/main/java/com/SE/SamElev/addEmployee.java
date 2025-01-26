@@ -1,3 +1,4 @@
+
 package com.SE.SamElev;
 
 import android.annotation.SuppressLint;
@@ -29,10 +30,10 @@ public class addEmployee extends AppCompatActivity {
         setContentView(R.layout.activity_add_employee);
 
         // Initialize UI components
-        editEmployeeName = findViewById(R.id.editName);
-        editEmployeeEmail = findViewById(R.id.editEmail);
-        editEmployeePassword = findViewById(R.id.editPassword);
-        Button btnAddEmployee = findViewById(R.id.btnRegister);
+        editEmployeeName = findViewById(R.id.u_name);
+        editEmployeeEmail = findViewById(R.id.u_editEmail);
+        editEmployeePassword = findViewById(R.id.u_editPassword);
+        Button btnAddEmployee = findViewById(R.id.u_btnRegister);
 
         // Initialize Firebase
         firebaseAuth = FirebaseAuth.getInstance();
