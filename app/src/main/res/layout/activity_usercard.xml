@@ -1,0 +1,126 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Products Label -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="16dp"
+            android:text="Products"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Product 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:elevation="8dp"
+            android:layout_marginBottom="16dp"
+            android:padding="8dp"
+            tools:ignore="ExtraText">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                app:srcCompat="@drawable/boxx" />  <!-- Increased size -->
+            android:scaleType="centerCrop"
+            android:src="@drawable/img" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:text="Cardboard Boxes"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#0D47A1"
+                android:text="Enquire"
+                tools:ignore="TextContrastCheck" />
+        </LinearLayout>
+
+        <!-- Product 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:elevation="8dp"
+            android:layout_marginBottom="16dp"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                app:srcCompat="@drawable/sheets" />  <!-- Increased size -->
+            android:scaleType="centerCrop"
+            android:src="@drawable/sheets" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:text="Cardboard Sheets"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#0D47A1"
+                android:text="Enquire"
+                tools:ignore="TextContrastCheck" />
+        </LinearLayout>
+
+        <!-- Product 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:elevation="8dp"
+            android:layout_marginBottom="16dp"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                app:srcCompat="@drawable/insulation" />  <!-- Increased size -->
+            android:scaleType="centerCrop"
+            android:src="@drawable/insulation" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:text="Insulation Sheets"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#0D47A1"
+                android:text="Enquire"
+                tools:ignore="TextContrastCheck" />
+        </LinearLayout>
+
+        <!-- Add more products as needed -->
+    </LinearLayout>
+</ScrollView>

@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:background="#F0F0F0"
-    android:padding="16dp"
+    android:padding="8dp"
     android:id="@+id/main"
     tools:context=".AdminActivity">
 
@@ -17,23 +17,23 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center"
-        android:layout_marginBottom="16dp">
+        android:layout_marginBottom="12dp">
 
         <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginBottom="8dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="6dp"
             android:contentDescription="User Icon"
             android:src="@drawable/userlogo" />
 
         <Button
             android:id="@+id/btnUser"
-            android:layout_width="200dp"
+            android:layout_width="180dp"
             android:layout_height="wrap_content"
             android:backgroundTint="#082F54"
             android:text="Add User"
             android:textColor="#FFFFFF"
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:textStyle="bold" />
     </LinearLayout>
 
@@ -43,23 +43,23 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center"
-        android:layout_marginBottom="16dp">
+        android:layout_marginBottom="12dp">
 
         <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginBottom="8dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="6dp"
             android:contentDescription="Announcements Icon"
             android:src="@drawable/announcements" />
 
         <Button
             android:id="@+id/btnAnnounce"
-            android:layout_width="200dp"
+            android:layout_width="180dp"
             android:layout_height="wrap_content"
             android:backgroundTint="#082F54"
             android:text="Announcements"
             android:textColor="#FFFFFF"
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:textStyle="bold" />
     </LinearLayout>
 
@@ -69,23 +69,23 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center"
-        android:layout_marginBottom="16dp">
+        android:layout_marginBottom="12dp">
 
         <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:src="@drawable/attendance"
             android:contentDescription="Attendance Icon"
-            android:layout_marginBottom="8dp" />
+            android:layout_marginBottom="6dp" />
 
         <Button
             android:id="@+id/btnAttendance"
-            android:layout_width="200dp"
+            android:layout_width="180dp"
             android:layout_height="wrap_content"
             android:backgroundTint="#082F54"
             android:text="Attendance"
             android:textColor="#FFFFFF"
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:textStyle="bold" />
     </LinearLayout>
 
@@ -94,30 +94,51 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:gravity="center">
+        android:gravity="center"
+        android:layout_marginBottom="12dp">
 
         <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginBottom="8dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="6dp"
             android:contentDescription="Tasks Icon"
             app:srcCompat="@drawable/emp" />
 
         <Button
             android:id="@+id/btnTasks"
-            android:layout_width="200dp"
+            android:layout_width="180dp"
             android:layout_height="wrap_content"
             android:backgroundTint="#082F54"
             android:text="Tasks"
             android:textColor="#FFFFFF"
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Inquiry Section -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="6dp"
+            android:contentDescription="Inquiry Icon"
+            android:src="@drawable/inquiry"
+            app:srcCompat="@drawable/inquiry" />
 
         <Button
             android:id="@+id/inquiryButton"
-            android:layout_width="match_parent"
+            android:layout_width="180dp"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:backgroundTint="#082F54"
+            android:text="Inquiry"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
     </LinearLayout>
 
 </LinearLayout>
